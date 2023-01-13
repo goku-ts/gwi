@@ -3031,27 +3031,27 @@ textarea.form-control-lg {
 
 .btn-primary {
   color: #fff;
-  background-color: #ee0979;
-  border-color: #ee0979;
+  background-color: #3CB371;
+  border-color: #ffffff;
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: #ca0867;
-  border-color: #be0761;
+  background-color: #00FF00;
+  border-color: #ffffff;
 }
 .btn-check:focus + .btn-primary, .btn-primary:focus {
   color: #fff;
-  background-color: #ca0867;
-  border-color: #be0761;
-  box-shadow: 0 0 0 0.25rem rgba(241, 46, 141, 0.5);
+  background-color: #00FF00;
+  border-color: #ffffff;
+  box-shadow: 0 0 0 0.25rem rgb(255, 255, 255);
 }
 .btn-check:checked + .btn-primary, .btn-check:active + .btn-primary, .btn-primary:active, .btn-primary.active, .show > .btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: #be0761;
-  border-color: #b3075b;
+  background-color: #3CB371;
+  border-color: #ffffff;
 }
 .btn-check:checked + .btn-primary:focus, .btn-check:active + .btn-primary:focus, .btn-primary:active:focus, .btn-primary.active:focus, .show > .btn-primary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.25rem rgba(241, 46, 141, 0.5);
+  box-shadow: 0 0 0 0.25rem rgb(255, 255, 255);
 }
 .btn-primary:disabled, .btn-primary.disabled {
   color: #fff;
@@ -4445,7 +4445,7 @@ textarea.form-control-lg {
   color: rgba(0, 0, 0, 0.9);
 }
 .navbar-light .navbar-nav .nav-link {
-  color: rgba(0, 0, 0, 0.55);
+  color: rgb(3, 119, 8);
 }
 .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
   color: rgba(0, 0, 0, 0.7);
@@ -11320,15 +11320,17 @@ header.masthead {
   overflow: hidden;
   padding-top: calc(7rem + 72px);
   padding-bottom: 7rem;
-  background: linear-gradient(0deg, #008000 0%,  #00FF00 100%);
+  background: linear-gradient(0deg, #3CB371 0%,  #00FF00 100%);
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: scroll;
+  height: 600px;
 
 }
 header.masthead .masthead-content {
   z-index: 1;
   position: relative;
+  align-items: center;
 }
 header.masthead .masthead-content .masthead-heading {
   font-size: 4rem;
@@ -11340,7 +11342,7 @@ header.masthead .bg-circle {
   z-index: 0;
   position: absolute;
   border-radius: 100%;
-  background:linear-gradient(0deg, #008000 0%,  #00FF00 100%);
+  background:linear-gradient(0deg, #3CB371 0%,  #00FF00 100%);
 }
 header.masthead .bg-circle-1 {
   height: 90rem;
@@ -11363,8 +11365,8 @@ header.masthead .bg-circle-3 {
 header.masthead .bg-circle-4 {
   height: 30rem;
   width: 30rem;
-  top: -5rem;
-  right: 35%;
+  top: -1rem;
+  right: 30%;
 }
 
 @media (min-width: 992px) {
