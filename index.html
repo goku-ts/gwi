@@ -1,120 +1,392 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="description" content="" />
-    <meta name="author" content="goku" />
-    <title>Green World Initiative</title>
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-    <!-- Font Awesome icons (free version)-->
-    <script
-      src="https://use.fontawesome.com/releases/v6.1.0/js/all.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- Google fonts-->
-    <link
-      href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i"
-      rel="stylesheet"
-    />
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-  </head>
-  <body id="page-top">
-    <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
-      <div class="container px-0">
-        <img src="assets/img/gwi.PNG" height="80" width="90" alt="gwi-logo" />
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarResponsive"
-          aria-controls="navbarResponsive"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
+
+<head>
+    <meta charset="utf-8">
+    <title>GWI - Green World Initiative</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">   
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+  
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light  px-4 px-lg-5">
+        <img src="img/gwi.PNG" height="80" width="90" alt="gwi-logo" />
+        <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <!--<ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="#!">About Us</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">The Team</a></li> 
-                        <li class="nav-item"><a class="nav-link" href="#!">Contact</a></li> 
-                    </ul>-->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Get Involved</a>
+                    <div class="dropdown-menu bg-light m-0">
+                        <a href="#" class="dropdown-item">Business Partnership</a>
+                        <a href="#" class="dropdown-item">Donate</a>
+                        <a href="#" class="dropdown-item">Philantropic Partnership</a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Explore</a>
+                    <div class="dropdown-menu bg-light m-0">
+                        <a href="#" class="dropdown-item">Blog</a>
+                        <a href="#" class="dropdown-item">Publications</a>
+                        <a href="#" class="dropdown-item">Image Gallery</a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About Green World</a>
+                    <div class="dropdown-menu bg-light m-0">
+                        <a href="#" class="dropdown-item">Our Team</a>
+                        <a href="#" class="dropdown-item">Our Network</a>
+                        <a href="#" class="dropdown-item">Careers</a>
+                    </div>
+                </div>
+                <a href="#" class="nav-item nav-link">Contact</a>
+            </div>
         </div>
-      </div>
     </nav>
-    <!-- Header-->
-    <header class="masthead text-center text-white">
-      <div class="masthead-content">
-        <div class="container px-5">
-          <h1 class="masthead-heading mb-0 text-white">
-            Green World Initiative
-          </h1>
-          <h2 class="masthead-subheading mb-0 text-white">motto goes here</h2>
-          <a class="btn btn-primary btn-xl rounded-pill mt-5" href="#scroll"
-            >Learn More</a
-          >
-        </div>
-      </div>
-      <div class="bg-circle-1 bg-circle"></div>
-      <div class="bg-circle-2 bg-circle"></div>
-      <div class="bg-circle-3 bg-circle"></div>
-      <div class="bg-circle-4 bg-circle"></div>
-    </header>
+    <!-- Navbar End -->
 
-    <!-- ABOUT Section -->
-    <section id="scroll" class="section-padding2">
-      <div class="container px-5">
-        <div class="row gx-5 align-items-center">
-          <div class="col-lg-6 order-lg-2">
-            <div class="">
-              <img class="img-fluid" src="assets/img/2.jpeg" alt="..." />
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-10">
-            <div class="about-caption mb-50">
-              <!-- Section Tittle -->
-              <div class="section-tittle mb-35">
-                <span>About our initiative</span>
-                <h2>About title goes here</h2>
-              </div>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit,mod
-                tempor incididunt ut labore et dolore magna aliqua. Utnixm, quis
-                nostrud exercitation ullamc.
-              </p>
-              <p>
-                Lorem ipvsum dolor sit amext, consectetur adipisicing elit, smod
-                tempor incididunt ut labore et dolore.
-              </p>
-            </div>
-            <a href="about.html" class="btn">About US</a>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- Footer-->
-    <footer class="py-5 bg-black">
-      <div class="container px-5">
-        <p class="m-0 text-center text-white small">
-          Copyright &copy; Green Wrold Initiative 2023
-        </p>
-      </div>
-    </footer>
-    <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
-  </body>
+    <!-- Carousel Start -->
+    <div class="container-fluid px-0 mb-5">
+        <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="img/gwi1.jpeg" alt="Image" height="850">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-end">
+                                <div class="col-lg-8 text-start">
+                                    <p class="fs-4 text-white"></p>
+                                    <h1 class="display-1 text-white mb-5 animated slideInRight">Green World Initiative</h1>
+                                    <a href="" class="btn btn-primary rounded-pill py-3 px-5 animated slideInRight">What We Do</a>
+                                    <a href="" class="btn btn-primary rounded-pill py-3 px-5 animated slideInRight">Get Involved</a>
+                                </div>
+                            </div>
+            
+                </div>
+                <!--
+                <div class="carousel-item">
+                    <img class="w-100" src="img/carousel-2.jpg" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-end">
+                                <div class="col-lg-8 text-end">
+                                    <p class="fs-4 text-white">Welcome to our dairy farm</p>
+                                    <h1 class="display-1 text-white mb-5 animated slideInRight">Best Organic Dairy Products</h1>
+                                    <a href="" class="btn btn-secondary rounded-pill py-3 px-5 animated slideInLeft">Explore More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                -->
+            </div>
+            <!--
+            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            -->
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+
+    <!-- Facts Start -->
+    <div class="container-xxl  py-5 my-5">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-6 text-center wow fadeIn" data-wow-delay="0.1s">
+                    <img class="img-fluid mb-4" src="img/icon-9.png" alt="">
+                    <h1 class="display-4" data-toggle="counter-up">123,456</h1>
+                    <p class="fs-5 text-primary mb-0">Trees Growing</p>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center wow fadeIn" data-wow-delay="0.3s">
+                    <img class="img-fluid mb-4" src="img/icon-10.png" alt="">
+                    <h1 class="display-4" data-toggle="counter-up">123,456</h1>
+                    <p class="fs-5 text-primary mb-0">Hectares Regenerated</p>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center wow fadeIn" data-wow-delay="0.5s">
+                    <img class="img-fluid mb-4" src="img/icon-2.png" alt="">
+                    <h1 class="display-4" data-toggle="counter-up">123,456</h1>
+                    <p class="fs-5 text-primary mb-0">Families Benefiting</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Facts End -->
+
+
+    <!-- About Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5 align-items-start">
+                <div class="col-lg-5">
+                    <div class="row g-2">
+                        <div class="col-6 wow fadeIn" data-wow-delay="0.1s">
+                            <img class="img-fluid rounded" src="img/service-1.jpg">
+                        </div>
+                        <div class="col-6 wow fadeIn" data-wow-delay="0.3s">
+                            <img class="img-fluid rounded" src="img/service-2.jpg">
+                        </div>
+                        <div class="col-6 wow fadeIn" data-wow-delay="0.5s">
+                            <img class="img-fluid rounded" src="img/service-3.jpg">
+                        </div>
+                        <div class="col-6 wow fadeIn" data-wow-delay="0.5s">
+                            <img class="img-fluid rounded" src="img/service-3.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <p class="section-title bg-white text-start text-primary pe-3">About Us</p>
+                    <h1 class="mb-4">Green World Initiative is a climate change non-profit</h1>
+                    <p class="mb-4">Our reforestation projects work with governments, local organizations and communities to restore threatened forests and landscapes in tropical regions and biodiversity hotspots.</p>
+                    <p class="mb-4"> Our focus is on sustainable restoration and supporting the well-being of the communities where we work.</p>
+                    <a class="btn btn-primary rounded-pill py-3 px-5" href="">Explore More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+
+
+<!-- Features Start -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="row g-5 align-items-start">
+
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                <h1 class="mb-4">We’re ambitious. And we take a long-term view.</h1>
+                <p class="mb-4">To help stop global warming in our lifetimes.</p>
+                <p class="mb-4">  We’re taking a leading role in growing the 1 trillion trees needed by 2030 to reverse global warming and restore the biodiversity and water to sustain all life on Earth.
+                </p>
+                <a class="btn btn-primary rounded-pill py-3 px-5" href="">Explore More</a>
+            </div>
+           
+            <div class="col-lg-5">
+                <div class="row g-2">
+                    <div class="col-6 wow fadeIn" data-wow-delay="0.1s">
+                        <img class="img-fluid rounded" src="img/service-1.jpg">
+                    </div>
+                    <div class="col-6 wow fadeIn" data-wow-delay="0.3s">
+                        <img class="img-fluid rounded" src="img/service-2.jpg">
+                    </div>
+                    <div class="col-6 wow fadeIn" data-wow-delay="0.5s">
+                        <img class="img-fluid rounded" src="img/service-3.jpg">
+                    </div>
+                    <div class="col-6 wow fadeIn" data-wow-delay="0.5s">
+                        <img class="img-fluid rounded" src="img/service-3.jpg">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- Features End -->
+
+
+
+
+    <!-- Banner Start -->
+    <div class="container-fluid banner my-5 py-5" data-parallax="scroll" data-image-src="img/banner.jpg">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.3s">
+                    <div class="row g-4 align-items-center">
+                        
+                        <div class="col-sm-8">
+                            <h2 class="text-white mb-3">We Sell Best Dairy Products</h2>
+                            <p class="text-white mb-4">Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                            <a class="btn btn-secondary rounded-pill py-2 px-4" href="">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="row g-4 align-items-center">
+                        
+                        <div class="col-sm-8">
+                            <h2 class="text-white mb-3">We Deliver Fresh Mild Worldwide</h2>
+                            <p class="text-white mb-4">Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                            <a class="btn btn-secondary rounded-pill py-2 px-4" href="">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Banner End -->
+
+
+    <!-- Service Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="section-title bg-white text-center text-primary px-3">Our Core Values</p>
+                <h1 class="mb-5">Services That We Offer For Entrepreneurs</h1>
+            </div>
+            <div class="row gy-5 gx-4">
+                <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item d-flex h-100">
+                       
+                        <div class="service-text p-5 pt-0">
+                            <div class="service-icon">
+                                <img class="img-fluid rounded-circle" src="img/service-1.jpg" alt="">
+                            </div>
+                            <h5 class="mb-3">Nature-based Solutions</h4>
+                            <p class="mb-4">Green World will invest in forests and land for a climate-positive and nature-positive future</p>
+                            <a class="btn btn-square rounded-circle" href=""><i class="bi bi-chevron-double-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item d-flex h-100">
+                        <div class="service-img">
+                            <img class="img-fluid" src="img/service-2.jpg" alt="">
+                        </div>
+                        <div class="service-text p-5 pt-0">
+                            <div class="service-icon">
+                                <img class="img-fluid rounded-circle" src="img/service-2.jpg" alt="">
+                            </div>
+                            <h5 class="mb-3">Breeding & Veterinary</h5>
+                            <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
+                            <a class="btn btn-square rounded-circle" href=""><i class="bi bi-chevron-double-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item d-flex h-100">
+                        <div class="service-img">
+                            <img class="img-fluid" src="img/service-3.jpg" alt="">
+                        </div>
+                        <div class="service-text p-5 pt-0">
+                            <div class="service-icon">
+                                <img class="img-fluid rounded-circle" src="img/service-3.jpg" alt="">
+                            </div>
+                            <h5 class="mb-3">Care & Milking</h5>
+                            <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
+                            <a class="btn btn-square rounded-circle" href=""><i class="bi bi-chevron-double-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Our Office</h5>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Accra - Ghana</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+233 55 655 565</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>gwi@gmail.com</p>
+                    <div class="d-flex pt-3">
+                        <a class="btn btn-square btn-secondary rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-secondary rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-secondary rounded-circle me-2" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-secondary rounded-circle me-2" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Links</h5>
+                    <a class="btn btn-link" href="">About Us</a>
+                    <a class="btn btn-link" href="">Contact Us</a>
+                    <a class="btn btn-link" href="">Our Services</a>
+                    <a class="btn btn-link" href="">Support</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Copyright Start -->
+    <div class="container-fluid bg-primary text-body copyright py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-white text-md-start mb-3 mb-md-0">
+                    &copy; <a class="fw-semi-bold text-white" href="#">Green World Initiative</a>, All Right Reserved.
+                </div>
+                
+                <div class="col-md-6 text-center text-md-end">
+                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/parallax/parallax.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
 </html>
